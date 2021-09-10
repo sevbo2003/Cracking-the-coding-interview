@@ -25,8 +25,8 @@ Rustam-Z🚀 • 8 June 2021
 ### Algorithms and data structures
 - Follow [LeetCode study plan](https://leetcode.com/study-plan/)
 - "Cracking the coding interview" + [CTCI in Leetcode](https://leetcode.com/discuss/general-discussion/1152824/cracking-the-coding-interview-6th-edition-in-leetcode)
-- LeetCode by topics from [Explore page](https://leetcode.com/explore/), InterviewBit.com
-- [Competitive Programmer's Handbook](https://cses.fi/book/book.pdf)
+- [Leetcode Explore](https://leetcode.com/explore/), [Codility](https://app.codility.com/programmers/lessons/), InterviewBit.com
+- ["Competitive Programmer's Handbook"](https://cses.fi/book/book.pdf)
 - "The Algorithm Design Manual" book
 
 ### System design
