@@ -8,10 +8,7 @@ class Solution:
 
         # NOTE we need to have need to be serached only when there is at least one element in negative sign
         if nums[0] < 0:
-            need_to_be_sorted = []
-            for num in nums:
-                if num < 0:
-                    need_to_be_sorted.append(num)
+            need_to_be_sorted = [x for x in nums if x < 0]
 
             # need_to_be_sorted = [nums[i] for i in range(len(nums)-1) if nums[i] >= nums[i+1]]
             print(">> need_to_be_sorted", need_to_be_sorted)
@@ -20,8 +17,8 @@ class Solution:
             print(">> already_sorted", already_sorted)
 
 
-            for i in range(len(need_to_be_sorted)):
-                already_sorted.insert(self.insert(already_sorted, need_to_be_sorted[i]**2), need_to_be_sorted[i]**2)
+            for i, num in enumerate(need_to_be_sorted):
+                already_sorted.insert(self.insert(already_sorted, num**2), num**2)
                 
             return already_sorted
 
