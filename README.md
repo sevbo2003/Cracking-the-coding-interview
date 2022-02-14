@@ -2,6 +2,9 @@
 
 Rustam-Z🚀 • 8 June 2021
 
+My Telegram Channel on DS and Algo: [@crackingfaang](https://t.me/crackingfaang)
+
+
 ## General advice
 - Find your "why", why you want to work at FAANG.
 - Move to next topic when you can solve the problems from similar topic. 
