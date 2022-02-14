@@ -5,7 +5,10 @@ Rustam-Z🚀 • 8 June 2021
 ## General advice
 - Find your "why", why you want to work at FAANG.
 - Move to next topic when you can solve the problems from similar topic. 
+- http://larrr.com/wp-content/uploads/2016/10/InterviewPreparationGuide.pdf
 - [Article by Sergey Sema](https://dou.ua/lenta/articles/google-interview/)
+- https://faang-interview.github.io/
+
 
 ## How to solve?
 1. Read the problem description (do not think to code)
@@ -23,11 +26,29 @@ Rustam-Z🚀 • 8 June 2021
 
 ## Study plan
 ### Algorithms and data structures
-- Follow [LeetCode study plan](https://leetcode.com/study-plan/)
-- "Cracking the coding interview" + [CTCI in Leetcode](https://leetcode.com/discuss/general-discussion/1152824/cracking-the-coding-interview-6th-edition-in-leetcode)
-- [Leetcode Explore](https://leetcode.com/explore/), [Codility](https://app.codility.com/programmers/lessons/), InterviewBit.com
-- ["Competitive Programmer's Handbook"](https://cses.fi/book/book.pdf)
-- "The Algorithm Design Manual" book
+- Resources
+    - [ ]  [LeetCode study plan](https://leetcode.com/study-plan/) DS 1, Algo 1
+    - [ ]  [Leetcode Explore](https://leetcode.com/explore/)
+    - [ ] "Cracking the coding interview" + [CTCI in Leetcode](https://leetcode.com/discuss/general-discussion/1152824/cracking-the-coding-interview-6th-edition-in-leetcode)
+
+    Books
+
+    - [ ]  Cracking the coding interview" + [CTCI in Leetcode](https://leetcode.com/discuss/general-discussion/1152824/cracking-the-coding-interview-6th-edition-in-leetcode)
+    - [ ]  "Grokking the algorithms"
+    - [ ]  ["Competitive Programmer's Handbook"](https://cses.fi/book/book.pdf)
+    - [ ]  "The Algorithm Design Manual" book
+    
+    More
+    
+    - [Codility](https://app.codility.com/programmers/lessons/), [InterviewBit.com](http://InterviewBit.com), educative, interviewcake
+    - [https://binarysearch.com/problems](https://binarysearch.com/problems) Facebook, Google, Microsoft interview questions
+    - [https://www.facebookrecruiting.com/portal/interview_prep_hub](https://www.facebookrecruiting.com/portal/interview_prep_hub)
+    
+    Problems to solve:
+    
+    - [https://seanprashad.com/leetcode-patterns/](https://seanprashad.com/leetcode-patterns/)
+    - NeetCode [https://docs.google.com/spreadsheets/d/1A2PaQKcdwO_lwxz9bAnxXnIQayCouZP6d-ENrBz_NXc/edit#gid=0](https://docs.google.com/spreadsheets/d/1A2PaQKcdwO_lwxz9bAnxXnIQayCouZP6d-ENrBz_NXc/edit#gid=0)
+    - [https://www.interviewbit.com/courses/programming/](https://www.interviewbit.com/courses/programming/)
 
 ### System design
 - "System Design Interview" book
@@ -37,7 +58,8 @@ Rustam-Z🚀 • 8 June 2021
 ## More
 - [Cracking the FAANG internship](https://gist.github.com/kwojcicki/fe916e8a12dd2abea68d772d740daf29)
 - [FAANG Interview. Бортовые заметки сообщества](https://docs.google.com/document/d/1RKzJA7UHj3UKMFxK4Bluy-gB7Sf2fk0mUlCPs76Z07k/edit#)
-- [FaangInterview telegram group](https://t.me/FaangInterview)
+- [FAANG Interview telegram group](https://t.me/FaangInterview)
+
 
 <!-- Welcome to Cracking FAANG!
 
@@ -51,11 +73,13 @@ My study plan:
 - https://t.me/FaangInterviewChannel
 
 Smth should be here:
-  - Google
-  - Facebook **
-  - Microsoft **
-  - Amazon 
-  - OpenAI
+    - Google
+    - Facebook **
+    - Microsoft **
+    - Amazon 
+    - OpenAI
+    - Databricks
+    - Bloomberg
 
 https://t.me/FaangDataScience/436
 "Хорошая мастер программа и стажировка по нужной теме + хорошая подготовка может принести офер джуниора в амазон." - @elena_12321
