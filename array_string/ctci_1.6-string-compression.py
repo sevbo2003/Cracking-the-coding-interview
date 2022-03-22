@@ -17,24 +17,21 @@ Solution #1 Time Complexity:
 
 """
 
-# Solution #1
+
 def compress_bad(string):
     compressed_string = ""
     count_consecutive = 0
+
     for i in range(len(string)):
         count_consecutive += 1
-
         # If next char is different than current append this char to result
         if i + 1 >= len(string) or string[i] != string[i+1]:
             compressed_string += string[i] + str(count_consecutive)
             count_consecutive = 0
 
-    # if len(compressed_string) < len(string):
-    #     return compressed_string
-    # else: 
-    #     return string
     return compressed_string if len(compressed_string) < len(string) else string
 
-string = "aabcccccaaa"
-print(compress_bad(string))
 
+if __name__ == "__main__":
+    string = "aabcccccaaa"
+    print(compress_bad(string))
