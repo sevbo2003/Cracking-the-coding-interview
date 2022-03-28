@@ -9,7 +9,7 @@ But in LL you can add / delete at the beginning / end of list in O(1).
 
 
 class Node:
-    def __init__(self, val):
+    def __init__(self, val: int):
         self.val = val
         self.next = None
 
