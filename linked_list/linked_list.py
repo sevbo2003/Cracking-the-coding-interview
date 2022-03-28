@@ -1,10 +1,20 @@
+"""
+A linked list is a data structure that represents a sequence of nodes. 
+In a singly linked list, each node points to the next node in the linked list. 
+A doubly linked list gives each node pointers to both the next node and the previous node.
+
+LL doesn't provide constanct access time to the node at a given index. You need to iterate K times to get to the node at index K.
+But in LL you can add / delete at the beginning / end of list in O(1).
+"""
+
+
 class Node:
     def __init__(self, val):
         self.val = val
         self.next = None
 
 
-class MyLinkedList:
+class LinkedList:
     size = 0
 
     def __init__(self):
@@ -12,24 +22,23 @@ class MyLinkedList:
 
     def get(self, index: int) -> int:
         if index < 0 or index >= self.size:
-            return -1
+            return None
 
         if self.head is None:
-            return -1
+            return None
 
         curr = self.head
         for i in range(index):
             curr = curr.next
-
         return curr.val
 
-    def addAtHead(self, val: int) -> None:
+    def add_at_head(self, val: int) -> None:
         node = Node(val)
         node.next = self.head
         self.head = node
         self.size += 1
 
-    def addAtTail(self, val: int) -> None:
+    def add_at_tail(self, val: int) -> None:
         curr = self.head
 
         if curr is None:
@@ -41,9 +50,9 @@ class MyLinkedList:
 
         self.size += 1
 
-    def addAtIndex(self, index: int, val: int) -> None:
+    def add_at_index(self, index: int, val: int) -> None:
         if index < 0 or index > self.size:
-            return
+            return None
 
         if index == 0:
             self.addAtHead(val)
@@ -59,9 +68,25 @@ class MyLinkedList:
 
             self.size += 1
 
-    def deleteAtIndex(self, index: int) -> None:
+    def delete_at_head(self) -> None:
+        if self.head is None:
+            return None
+        self.head = self.head.next
+        self.size -= 1
+
+    def delete_at_tail(self) -> None:
+        if self.head is None:
+            return None
+
+        curr = self.head
+        while curr.next is not None:
+            curr = curr.next
+        curr.next = None
+        self.size -= 1
+
+    def delete_at_index(self, index: int) -> None:
         if index < 0 or index >= self.size:
-            return
+            return None
 
         curr = self.head
         if index == 0:
@@ -73,29 +98,26 @@ class MyLinkedList:
             curr.next = curr.next.next
         self.size -= 1
 
-
     def __repr__(self):
         curr = self.head
         nodes = []
         while curr is not None:
             nodes.append(str(curr.val))
             curr = curr.next
-
         return "->".join(nodes)
 
-obj = MyLinkedList()
-obj.addAtHead(1)
-obj.addAtHead(2)
-obj.addAtHead(3)
-print(obj, obj.size)
 
-param_1 = obj.get(2)
+if __name__ == "__main__":
+    obj = LinkedList()
 
-obj.addAtTail(4)
-print(obj)
-
-obj.addAtIndex(1, 56)
-print(obj)
-
-obj.deleteAtIndex(1)
-print(obj)
+    obj.add_at_head(1)
+    obj.add_at_head(2)
+    obj.add_at_head(3)
+    print("Linked list, len():", obj, obj.size)
+    print("Object in Nth position:", obj.get(2))
+    obj.add_at_tail(4)
+    print(obj)
+    obj.add_at_index(1, 56)
+    print(obj)
+    obj.delete_at_index(1)
+    print(obj)
