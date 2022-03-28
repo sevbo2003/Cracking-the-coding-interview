@@ -78,10 +78,12 @@ class LinkedList:
         if self.head is None:
             return None
 
+        prev = None
         curr = self.head
         while curr.next is not None:
+            prev = curr
             curr = curr.next
-        curr.next = None
+        prev.next = None
         self.size -= 1
 
     def delete_at_index(self, index: int) -> None:
@@ -119,5 +121,11 @@ if __name__ == "__main__":
     print(obj)
     obj.add_at_index(1, 56)
     print(obj)
+    obj.delete_at_head()
+    print(obj)
+    obj.add_at_index(4, 25)
+    print(obj)
     obj.delete_at_index(1)
+    print(obj)
+    obj.delete_at_tail()
     print(obj)
