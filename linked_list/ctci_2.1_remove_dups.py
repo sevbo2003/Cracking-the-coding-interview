@@ -1,16 +1,18 @@
 """
-Remove dups in linked list.
+Problem: remove dups in linked list.
 
-We can use a hash table to keep track of the elements we've seen so far.
+Solution: 
+1. We can use a hash table to keep track of the elements we've seen so far.
 
+Time: O(n)
+Space: O(k), where k is distinc elements in the list.
 """
 
-# Definition for singly-linked list.
 
-# class ListNode:
-#     def __init__(self, val=0, next=None):
-#         self.val = val
-#         self.next = next
+class ListNode:
+    def __init__(self, val=0, next=None):
+        self.val = val
+        self.next = next
 
 
 def remove_dups(head):
