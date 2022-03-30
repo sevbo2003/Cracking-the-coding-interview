@@ -15,7 +15,7 @@ class ListNode:
         self.next = next
 
 
-def remove_dups(head):
+def remove_dups(head: ListNode) -> ListNode:
     """Remove duplicates from a linked list."""
     previous = head
     dupes = {previous.val}
@@ -29,3 +29,21 @@ def remove_dups(head):
             previous = previous.next
 
     return head
+
+
+def remove_dups_without_extra_space(head: ListNode) -> ListNode:
+    """No buffer allowed solution.
+    We will use current and runner up pointers. 
+    Runner up pointer will check the subsequent nodes for duplicates.
+    """
+    curr = head 
+    while curr is not None:
+        # Delete all future nodes that have the same value
+        runner = curr
+        while runner.next is not None:
+            if runner.next.val == curr.val:
+                runner.next = runner.next.next
+            else:
+                runner = runner.next 
+        curr = curr.next
+    return head 

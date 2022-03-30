@@ -8,13 +8,13 @@ But in LL you can add / delete at the beginning / end of list in O(1).
 """
 
 
-class Node:
+class ListNode:
     def __init__(self, val: int):
         self.val = val
         self.next = None
 
 
-class LinkedList:
+class LinkedList(ListNode):
     size = 0
 
     def __init__(self):
@@ -33,7 +33,7 @@ class LinkedList:
         return curr.val
 
     def add_at_head(self, val: int) -> None:
-        node = Node(val)
+        node = ListNode(val)
         node.next = self.head
         self.head = node
         self.size += 1
@@ -42,11 +42,11 @@ class LinkedList:
         curr = self.head
 
         if curr is None:
-            self.head = Node(val)
+            self.head = ListNode(val)
         else:
             while curr.next is not None:
                 curr = curr.next
-            curr.next = Node(val)
+            curr.next = ListNode(val)
 
         self.size += 1
 
@@ -62,7 +62,7 @@ class LinkedList:
             for i in range(index - 1):
                 curr = curr.next
 
-            node = Node(val)
+            node = ListNode(val)
             node.next = curr.next
             curr.next = node
 
