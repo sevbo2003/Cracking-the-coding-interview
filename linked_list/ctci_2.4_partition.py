@@ -1,7 +1,18 @@
 """
 86. Partition List
 
+Input: head (ListNode), x (int)
+Output: ListNode
 
+Problem: place nodes with values small x to left side, bigger values to right side
+
+Solution:
+1. Create two lists left and right, and dummies which are the beginning point of each newly created lists
+2. If value is smaller add node to left else to right
+3. Concatenate them left.next = dummy_right.next
+
+Time: O(n)
+Space: O(1)
 """
 
 from linked_list import ListNode
