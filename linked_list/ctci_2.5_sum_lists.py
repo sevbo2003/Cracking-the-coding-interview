@@ -16,8 +16,8 @@ we need to use OR and assign node value to 0 if it finished
 8. Check for l1 and l2 is not None
 9. After finishing, check one more time if carry is 1, then add a new node
 
-Time:
-Space:
+Time: O(n + m)
+Space: O(1)
 """
 
 from linked_list import ListNode
