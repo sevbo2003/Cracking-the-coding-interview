@@ -2,7 +2,11 @@ def reverseList(self, head):
     prev, curr = None, head
 
     while curr:
-        nxt = curr.next
-
+        tmp = curr.next
+        
         curr.next = prev
         prev = curr
+        curr = tmp
+    
+    return prev
+    

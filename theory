@@ -40,11 +40,12 @@
     - Greedy algorithms
     - Recursion
 
-## ASCII
-```
+
+ASCII
 128 chars from [0, 127], 7 bit
 65 → 90, “A” → “Z”
 97 → 122, “a” → “z”
 ord(”a”) → 97
 chr(97) → “a”
-```
+
+
