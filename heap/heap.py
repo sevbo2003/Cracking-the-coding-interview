@@ -12,21 +12,6 @@ heappop() pop and return the smallest element from heap
 heappush() to push to the end
 
 """
-
-# import heapq
-#
-# a = [3, 5, 1, 2, 6, 8, 7]
-#
-# heapq.heapify(a)
-# print(a)
-#
-# popped_element = heapq.heappop(a)
-# print(popped_element, a)
-#
-# heapq.heappush(a, 4)
-# print(a)
-#
-
 from heapq import heappop, heappush, heapify
 
 
