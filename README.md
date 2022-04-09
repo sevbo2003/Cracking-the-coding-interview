@@ -34,11 +34,9 @@ My Telegram Channel on DS and Algo: [@crackingfaang](https://t.me/crackingfaang)
 - [ ] [Leetcode Explore](https://leetcode.com/explore/)
 - [ ] "Cracking the coding interview" + [CTCI problems in Leetcode](https://leetcode.com/discuss/general-discussion/1152824/cracking-the-coding-interview-6th-edition-in-leetcode)
 - [ ] [LeetCode study plan](https://leetcode.com/study-plan/) DS 2, Algo 2
-- [ ] [Codility](https://app.codility.com/programmers/lessons/), 
-- [ ] [interviewbit.com](https://www.interviewbit.com/courses/programming/), educative.io, interviewcake, algoexpert
-- [ ] [binarysearch.com](https://binarysearch.com/problems) Facebook, Google, Microsoft interview questions
-- [ ] [facebookrecruiting.com](https://www.facebookrecruiting.com/portal/interview_prep_hub)
 - [ ] [https://neetcode.io/](https://neetcode.io/) or [https://seanprashad.com/leetcode-patterns/](https://seanprashad.com/leetcode-patterns/)
+- [ ] [Codility](https://app.codility.com/programmers/lessons/), [interviewbit.com](https://www.interviewbit.com/courses/programming/), educative.io, interviewcake, algoexpert, [binarysearch.com](https://binarysearch.com/problems) Facebook, Google, Microsoft interview questions
+- [ ] [facebookrecruiting.com](https://www.facebookrecruiting.com/portal/interview_prep_hub)
 
 ### System design
 - "System Design Interview" book
