@@ -15,7 +15,7 @@ My Telegram Channel on DS and Algo: [@crackingfaang](https://t.me/crackingfaang)
 
 ## How to solve?
 1. Read the problem description (do not think to code)
-2. Try to question yourself (is it ASCII or Unicode), what is the Max value, is there a difference bettwen capital letter or small letters.
+2. Try to question yourself (is it ASCII or Unicode), what is the Max value, is there a difference between capital letter or small letters
 3. Draw some examples on paper (with corner cases)
 4. Thinking about the solution in mind (and evaluate complexity)
 5. Think better solution
@@ -29,29 +29,16 @@ My Telegram Channel on DS and Algo: [@crackingfaang](https://t.me/crackingfaang)
 
 ## Study plan
 ### Algorithms and data structures
-- Resources
-    - [ ]  [LeetCode study plan](https://leetcode.com/study-plan/) DS 1, Algo 1
-    - [ ]  [Leetcode Explore](https://leetcode.com/explore/)
-    - [ ] "Cracking the coding interview" + [CTCI in Leetcode](https://leetcode.com/discuss/general-discussion/1152824/cracking-the-coding-interview-6th-edition-in-leetcode)
-
-    Books
-
-    - [ ]  Cracking the coding interview" + [CTCI in Leetcode](https://leetcode.com/discuss/general-discussion/1152824/cracking-the-coding-interview-6th-edition-in-leetcode)
-    - [ ]  "Grokking the algorithms"
-    - [ ]  ["Competitive Programmer's Handbook"](https://cses.fi/book/book.pdf)
-    - [ ]  "The Algorithm Design Manual" book
-    
-    More
-    
-    - [Codility](https://app.codility.com/programmers/lessons/), [InterviewBit.com](http://InterviewBit.com), educative, interviewcake
-    - [https://binarysearch.com/problems](https://binarysearch.com/problems) Facebook, Google, Microsoft interview questions
-    - [https://www.facebookrecruiting.com/portal/interview_prep_hub](https://www.facebookrecruiting.com/portal/interview_prep_hub)
-    
-    Problems to solve:
-    
-    - [https://seanprashad.com/leetcode-patterns/](https://seanprashad.com/leetcode-patterns/)
-    - NeetCode [https://docs.google.com/spreadsheets/d/1A2PaQKcdwO_lwxz9bAnxXnIQayCouZP6d-ENrBz_NXc/edit#gid=0](https://docs.google.com/spreadsheets/d/1A2PaQKcdwO_lwxz9bAnxXnIQayCouZP6d-ENrBz_NXc/edit#gid=0)
-    - [https://www.interviewbit.com/courses/programming/](https://www.interviewbit.com/courses/programming/)
+- [ ] "Grokking the algorithms"
+- [ ] [LeetCode study plan](https://leetcode.com/study-plan/) DS 1, Algo 1
+- [ ] [Leetcode Explore](https://leetcode.com/explore/)
+- [ ] "Cracking the coding interview" + [CTCI problems in Leetcode](https://leetcode.com/discuss/general-discussion/1152824/cracking-the-coding-interview-6th-edition-in-leetcode)
+- [ ] [LeetCode study plan](https://leetcode.com/study-plan/) DS 2, Algo 2
+- [ ] [Codility](https://app.codility.com/programmers/lessons/), 
+- [ ] [interviewbit.com](https://www.interviewbit.com/courses/programming/), educative.io, interviewcake, algoexpert
+- [ ] [binarysearch.com](https://binarysearch.com/problems) Facebook, Google, Microsoft interview questions
+- [ ] [facebookrecruiting.com](https://www.facebookrecruiting.com/portal/interview_prep_hub)
+- [ ] [https://neetcode.io/](https://neetcode.io/) or [https://seanprashad.com/leetcode-patterns/](https://seanprashad.com/leetcode-patterns/)
 
 ### System design
 - "System Design Interview" book
@@ -69,7 +56,7 @@ My Telegram Channel on DS and Algo: [@crackingfaang](https://t.me/crackingfaang)
 My study plan:
 - #algorithms, #systems_design and #behavior
 
-- Nodir's advice https://t.me/cracking_faang/285
+- Nodir's advice https://t.me/crackingfaang/285
 - Smns advice https://t.me/FaangInterviewChannel/58
 
 - https://t.me/faang_materials
