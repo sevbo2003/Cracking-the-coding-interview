@@ -3,7 +3,6 @@ Input: Tree as array
 Output: We give the max depth of tree
 
 Do with DFS (depth first search)
-
 """
 
 
