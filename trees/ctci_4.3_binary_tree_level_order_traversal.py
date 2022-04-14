@@ -7,8 +7,8 @@ Solution:
 1. Use BFS
 2. Use queue (deque)
 
-Time: O()
-Space: O()
+Time: O(n), where n is the number of nodes
+Space: O(n)
 """
 
 class TreeNode:

@@ -1,15 +1,13 @@
 """
-LeetCode: https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/
+LeetCode: 108, https://leetcode.com/problems/convert-sorted-array-to-binary-search-tree/
 
 Problem: Covert a sorted array to BST (binary search tree) 
 
 Solution: 
-1. 
-2. 
-3. 
+1. Recursive solution, create a sub tree for each element in the array
 
-Time: O()
-Space: O()
+Time: O(n)
+Space: O(1)
 """
 
 from typing import List, Optional
