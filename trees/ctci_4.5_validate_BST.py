@@ -36,3 +36,23 @@ class Solution:
                 return False
 
         return True
+
+
+class Solution2:
+    def isLeave(self, node):
+        return not (node.left or node.right)
+
+    def inorder(self, node):
+        if not node:
+            return []
+        if self.isLeave(node):
+            return [node.val]
+        return self.inorder(node.left) + [node.val] + self.inorder(node.right)
+
+    def isValidBST(self, root: Optional[TreeNode]) -> bool:
+        arr = self.inorder(root)
+        print(arr)
+        for i in range(1, len(arr)):
+            if arr[i] <= arr[i - 1]:
+                return False
+        return True

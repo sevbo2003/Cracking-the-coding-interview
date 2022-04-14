@@ -26,3 +26,5 @@ Binary heaps (min-heap):
 1. A min-heap is a complete binary tree where each node is smaller than its children. The root = min element in tree.
 2. We have two methods, `insert()` and `extract_min()`, both `O(logn)`, where `n` is the number of nodes in the heap.
 
+
+897 - beautiful use case of in-order traversal

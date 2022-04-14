@@ -10,21 +10,21 @@ class Node:
 
 
 class Solution:
-    def connect(self, root: 'Node') -> 'Node':
-        # print(root.left.left.next)
-
+    def connect(self, root: 'Optional[Node]') -> 'Optional[Node]':
         if not root:
-            return root
+            return None
 
-        q = [root]
+        queue = collections.deque()
+        queue.append(root)
 
-        while q:
-            curr = q.pop(0)  # taking the left most element from queue
-            if curr.left and curr.right:  # Check for children
-                curr.left.next = curr.right
-                if curr.next:
-                    curr.right.next = curr.next.left
-                q.append(curr.left)
-                q.append(curr.right)
+        while queue:
+            node = queue.popleft()
+            if node.left and node.right:
+                node.left.next = node.right
+                if node.next:
+                    node.right.next = node.next.left
+
+                queue.append(node.left)
+                queue.append(node.right)
 
         return root
