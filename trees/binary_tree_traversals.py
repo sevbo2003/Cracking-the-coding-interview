@@ -8,8 +8,8 @@ class TreeNode:
 class Traverse:
     def traversal(self, root: TreeNode) -> list:
         traversed_tree = []
-        # self.preorder_traversal(root, traversed_tree)
-        self.inorder_traversal(root, traversed_tree)
+        self.preorder_traversal(root, traversed_tree)
+        # self.inorder_traversal(root, traversed_tree)
         # self.inorder_traversal(root, traversed_tree)
         return traversed_tree
 

@@ -29,6 +29,7 @@ class Node:
             root.insert_node(i)
 
     def bfs(self, root=None):
+        # https://csanim.com/tutorials/breadth-first-search-python-visualization-and-code
         if root is None:
             return None
         queue, values = deque(), []
