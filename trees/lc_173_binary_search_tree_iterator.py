@@ -38,7 +38,6 @@ class BSTIterator:
         return self._current < len(self._traversal)
 
 
-
 class BSTIterator2:
     def __init__(self, root: Optional[TreeNode]):
         self.iter = self._inorder(root)

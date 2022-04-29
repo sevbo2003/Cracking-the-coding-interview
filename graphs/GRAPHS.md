@@ -3,6 +3,10 @@
 Need to learn:
 - DFS (depth first search), stack
 - BFS (breadth first search), queue
+- Dijkstra's algorithm
+- Prim's algorithm (Minimum spanning tree)
+- Kruskal's algorithm
+ 
 
 Notes:
 - Vertices (nodes), edges (lines between vertices)
