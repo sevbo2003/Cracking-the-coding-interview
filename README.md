@@ -29,6 +29,8 @@ My Telegram Channel on DS and Algo: [@crackingfaang](https://t.me/crackingfaang)
 
 ## Study plan
 ### Algorithms and data structures
+- [ ] VIDEOS: [Jenny's DSA playlist](https://www.youtube.com/playlist?list=PLdo5W4Nhv31bbKJzrsKfMpo_grxuLl8LU), [Naso Academy DS playlist](https://www.youtube.com/playlist?list=PLBlnK6fEyqRj9lld8sWIUNwlKfdUoPd1Y)
+- [ ] READING: [programiz.com/dsa](https://www.programiz.com/dsa)
 - [ ] "Grokking the algorithms"
 - [ ] [LeetCode study plan](https://leetcode.com/study-plan/) DS 1, Algo 1
 - [ ] [Leetcode Explore](https://leetcode.com/explore/)
@@ -37,6 +39,9 @@ My Telegram Channel on DS and Algo: [@crackingfaang](https://t.me/crackingfaang)
 - [ ] [https://neetcode.io/](https://neetcode.io/) or [https://seanprashad.com/leetcode-patterns/](https://seanprashad.com/leetcode-patterns/)
 - [ ] [Codility](https://app.codility.com/programmers/lessons/), [interviewbit.com](https://www.interviewbit.com/courses/programming/), educative.io, interviewcake, algoexpert, [binarysearch.com](https://binarysearch.com/problems) Facebook, Google, Microsoft interview questions
 - [ ] [facebookrecruiting.com](https://www.facebookrecruiting.com/portal/interview_prep_hub)
+
+### Interesting resources
+- [ ] YOUTUBE: [Tushar Roy - Coding Made Simple](https://www.youtube.com/user/tusharroy2525/playlists)
 
 ### System design
 - "System Design Interview" book
