@@ -1,20 +1,24 @@
-def find_smallest(arr):
-    smallest = arr[0]
-    smallest_index = 0
-    for i in range(1, len(arr)):
-        if smallest > arr[i]:
-            smallest = arr[i]
-            smallest_index = i
-    return smallest_index
+"""
+Selection sort algorithm implementation.
+Time Complexity:
+    Best O(n^2)
+    Worst O(n^2)
+    Average O(n^2)
+Space Complexity: O(1)
+"""
 
 
-def selection_sort(arr):
-    new_arr = []
-    for i in range(len(arr)):
-        smallest = find_smallest(arr)
-        new_arr.append(arr.pop(smallest))
-    return new_arr
+def selection_sort(array):
+    for i in range(len(array)):
+        min_index = i
+        for j in range(i + 1, len(array)):
+            if array[j] < array[min_index]:
+                min_index = j
+        array[i], array[min_index] = array[min_index], array[i]
+    return array
 
 
-if __name__ == "__main__":
-    print(selection_sort([5, 3, 6, 2, 10]))
+if __name__ == '__main__':
+    unsorted_array = [5, 3, 6, 2, 10, -23, 0]
+    selected_array = selection_sort(unsorted_array)
+    print(selected_array)

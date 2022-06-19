@@ -40,7 +40,7 @@ My Telegram Channel on DS and Algo: [@crackingfaang](https://t.me/crackingfaang)
 - [ ] [Codility](https://app.codility.com/programmers/lessons/), [interviewbit.com](https://www.interviewbit.com/courses/programming/), educative.io, interviewcake, algoexpert, [binarysearch.com](https://binarysearch.com/problems) Facebook, Google, Microsoft interview questions
 - [ ] [facebookrecruiting.com](https://www.facebookrecruiting.com/portal/interview_prep_hub)
 
-### Interesting resources
+### More resources
 - [ ] YOUTUBE: [Tushar Roy - Coding Made Simple](https://www.youtube.com/user/tusharroy2525/playlists)
 
 ### System design
