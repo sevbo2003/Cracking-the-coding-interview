@@ -1,45 +1,55 @@
 from collections import deque
 
 
-class Node:
-    def __init__(self, val: int):
-        self.left = None
-        self.right = None
+class TreeNode:
+    """
+    TreeNode class creates a binary search tree, and traverses the tree using BFS and DFS algorithms.
+
+    insert_nodes(vals: list) - creates binary search tree
+    bfs(root: TreeNode) - BFS traversal
+    dfs(root: TreeNode) - DFS preorder traversal
+    """
+
+    def __init__(self, val=0, left=None, right=None):
         self.val = val
+        self.left = left
+        self.right = right
 
     def __repr__(self):
         return str(self.val)
 
-    def insert_node(self, val):
+    def _insert_node(self, val):
         if self.val is not None:
             if val < self.val:
                 if self.left is None:
-                    self.left = Node(val)
+                    self.left = TreeNode(val)
                 else:
-                    self.left.insert_node(val)
+                    self.left._insert_node(val)
             elif val >= self.val:
                 if self.right is None:
-                    self.right = Node(val)
+                    self.right = TreeNode(val)
                 else:
-                    self.right.insert_node(val)
+                    self.right._insert_node(val)
 
-    @staticmethod
-    def insert_nodes(vals: list, root):
+    def insert_nodes(self, vals: list):
         for i in vals:
-            root.insert_node(i)
+            self._insert_node(i)
 
-    def bfs(self, root=None):
-        # https://csanim.com/tutorials/breadth-first-search-python-visualization-and-code
+
+class Traverse:
+    def bfs(self, root: TreeNode) -> list:
         if root is None:
             return None
-        queue, values = deque(), []
+
+        values = []  # CUSTOM
+        queue = deque()
         queue.append(root)
 
         while queue:
-            level_values = []
+            level_values = []  # CUSTOM
             for _ in range(len(queue)):
                 cur_node = queue.popleft()
-                level_values.append(cur_node.val)
+                level_values.append(cur_node.val)  # CUSTOM
 
                 if cur_node.left is not None:
                     queue.append(cur_node.left)
@@ -47,21 +57,50 @@ class Node:
                 if cur_node.right is not None:
                     queue.append(cur_node.right)
 
-            values.append(level_values)
+            values.append(level_values)  # CUSTOM
 
         return values
 
-    def dfs_recursive(self, root=None):
-        if root is None:
-            return None
-        else:
-            print(root.val, end=" ")
-            self.dfs_recursive(root.left)
-            self.dfs_recursive(root.right)
+    @staticmethod
+    def custom_print(val):
+        print(val, end=" ")
+
+    def dfs_iterative(self, root: TreeNode) -> list:
+        """
+        Inorder DFS traversal iterative algorithm.
+        """
+        stack = deque()
+        values = []
+
+        curr = root
+        while True:
+            if curr is not None:
+                stack.append(curr)
+                curr = curr.left
+            elif stack:
+                curr = stack.pop()
+                values.append(curr.val)
+                curr = curr.right
+            else:
+                break
+
+        return values
+
+    def dfs_recursive(self, root: TreeNode, operation=custom_print):
+        """
+        Inorder DFS traversal recursive algorithm.
+        """
+        if root:
+            self.dfs_recursive(root.left, operation)
+            operation(root.val)
+            self.dfs_recursive(root.right, operation)
 
 
 if __name__ == "__main__":
-    root = Node(4)
-    root.insert_nodes([2, 1, 3, 6, 5, 7], root)  # BST is created.
-    print(root.bfs(root))
-    root.dfs_recursive(root)
+    tree_root = TreeNode(4)
+    tree_root.insert_nodes([2, 1, 3, 6, 5, 7])
+
+    traverse = Traverse()
+
+    print("BFS traversal:", traverse.bfs(tree_root))
+    print("DFS traversal:", traverse.dfs_iterative(tree_root))

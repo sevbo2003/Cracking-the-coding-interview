@@ -1,3 +1,8 @@
+"""
+
+"""
+
+
 class TreeNode:
     def __init__(self, val=0, left=None, right=None):
         self.val = val
@@ -6,11 +11,18 @@ class TreeNode:
 
 
 class Traverse:
-    def traversal(self, root: TreeNode) -> list:
+    def traversal(self, type_of_dfs: str, root: TreeNode) -> list:
         traversed_tree = []
-        self.preorder_traversal(root, traversed_tree)
-        # self.inorder_traversal(root, traversed_tree)
-        # self.inorder_traversal(root, traversed_tree)
+        args = root, traversed_tree
+
+        traversals = {
+            "inorder": self.inorder_traversal,
+            "preorder": self.preorder_traversal,
+            "postorder": self.postorder_traversal
+        }
+
+        traversals[type_of_dfs](*args)
+
         return traversed_tree
 
     def preorder_traversal(self, root, traversed_tree):
@@ -37,7 +49,15 @@ class Traverse:
 
 if __name__ == "__main__":
     node3 = TreeNode(3)
-    node2 = TreeNode(1)
-    node1 = TreeNode(2, node2, node3)
+    node2 = TreeNode(2)
+    node1 = TreeNode(1, node2, node3)
+
     traverse = Traverse()
-    print(traverse.traversal(node1))
+
+    inorder_traversal = traverse.traversal("inorder", node1)
+    preorder_traversal = traverse.traversal("preorder", node1)
+    postorder_traversal = traverse.traversal("postorder", node1)
+
+    print("Inorder:", inorder_traversal)
+    print("Preorder:", preorder_traversal)
+    print("Postorder:", postorder_traversal)

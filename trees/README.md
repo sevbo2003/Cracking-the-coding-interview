@@ -13,11 +13,15 @@ Types of binary trees:
 4. Binary search tree = ordered binary tree. L < N <= R.
 
 Notes on binary trees (page 102):
-1. If TREE[0] = ROOT then
+1. **Edge** = link between any two nodes.
+2. **Height of node** = number of edges from the deepest leaf to node.
+3. **Depth of a node** = number of edges from the root to the node.
+4. **Height of a tree** = height of the root node.
+5. If TREE[0] = ROOT then
     - Left child of a node K => `2*K + 1`
     - Right child of a node K => `2*K + 2`
     - Parent of any node K => `floor(K/2) - 1`
-2. Pre-order (NLR), post-order (LRN), in-order TRAVERSAL (LNR)
+6. DFS Traversals: pre-order (NLR), post-order (LRN), in-order (LNR)
     - When we perform in-order traversal on BST, it visits the nodes in ascending order.
     - In pre-order the root is always visited first.
     - In post-order the root is always the last node visited.

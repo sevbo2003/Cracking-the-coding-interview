@@ -1,3 +1,13 @@
+Top coding interview concepts (youtu.be/ft0owvS5tQA):
+- Heap top=O(1), insert=O(log n), remove=O(log n), heapify=O(n)
+- Sliding window, two pointers
+- Binary search O(log n)
+- DFS & BFS
+- Recursion (trees, graphs, backtracking, DP and more)
+- HashMaps search=O(1), insert=O(1), remove=O(1)
+
+Top data structures (http://larrr.com/wp-content/uploads/2016/10/InterviewPreparationGuide.pdf):
+- Prerequisites: Asymptotic notation, Bitwise operations, combinatorics & probability, points geometry
 - Strings
     - ASCII, Unicode
     - Как строки реализованы в вашем языке программирования (например, есть ли уних максимальная длина)
