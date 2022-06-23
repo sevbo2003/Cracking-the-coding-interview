@@ -4,7 +4,7 @@ Questions to raise during coding interview:
 1. Trees / binary tree
 2. Binary tree / binary search tree
 3. If BST do we have duplicates? And in which side?
-4. Balanced (AVL tree) / unbalanced. Balanced doesn't mean having exact same size in left and right size. It means  "not terribly unbalanced" and ensures `O(log n)` for insert and find.
+4. Balanced (AVL tree) / unbalanced. Balanced doesn't mean having exact same size in left and right size. It means "not terribly unbalanced" and ensures `O(log n)` for insert and find.
 
 Types of binary trees:
 1. Complete binary tree = every level of the tree is fully filled, except for perhaps the last level. Filled left to right.
