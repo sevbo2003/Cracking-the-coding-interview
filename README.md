@@ -4,7 +4,7 @@ Rustam-Z🚀 • 8 June 2021
 
 My Telegram Channel on DS and Algo: [@crackingfaang](https://t.me/crackingfaang)
 
-## Study plan
+## Study plan roadmap
 ### Algorithms and data structures
 - [ ] VIDEOS: [Jenny's DSA playlist](https://www.youtube.com/playlist?list=PLdo5W4Nhv31bbKJzrsKfMpo_grxuLl8LU), [Naso Academy DS playlist](https://www.youtube.com/playlist?list=PLBlnK6fEyqRj9lld8sWIUNwlKfdUoPd1Y)
 - [ ] READING: [programiz.com/dsa](https://www.programiz.com/dsa)
@@ -23,7 +23,7 @@ My Telegram Channel on DS and Algo: [@crackingfaang](https://t.me/crackingfaang)
 - [ ] [Codility](https://app.codility.com/programmers/lessons/), [interviewbit.com](https://www.interviewbit.com/courses/programming/), educative.io, [binarysearch.com](https://binarysearch.com/problems) Facebook, Google, Microsoft interview questions
 
 ### System design
-- "System Design Interview" book
+- "System Design Interview" book - 1<sup>st</sup> and 2<sup>nd</sup> editions
 - "Grokking the System Design Interview" (educative.io)
 - "Designing Data-Intensive Applications" book
 
@@ -77,3 +77,4 @@ Smth should be here:
 https://t.me/FaangDataScience/436
 "Хорошая мастер программа и стажировка по нужной теме + хорошая подготовка может принести офер джуниора в амазон." - @elena_12321
 -->
+

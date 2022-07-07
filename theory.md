@@ -1,4 +1,4 @@
-Top coding interview concepts (youtu.be/ft0owvS5tQA):
+### Top coding interview concepts (http://youtu.be/ft0owvS5tQA):
 - Heap top=O(1), insert=O(log n), remove=O(log n), heapify=O(n)
 - Sliding window, two pointers
 - Binary search O(log n)
@@ -6,7 +6,7 @@ Top coding interview concepts (youtu.be/ft0owvS5tQA):
 - Recursion (trees, graphs, backtracking, DP and more)
 - HashMaps search=O(1), insert=O(1), remove=O(1)
 
-Top data structures (http://larrr.com/wp-content/uploads/2016/10/InterviewPreparationGuide.pdf):
+### Top data structures (http://larrr.com/wp-content/uploads/2016/10/InterviewPreparationGuide.pdf):
 - Prerequisites: Asymptotic notation, Bitwise operations, combinatorics & probability, points geometry
 - Strings
     - ASCII, Unicode
@@ -37,10 +37,10 @@ Top data structures (http://larrr.com/wp-content/uploads/2016/10/InterviewPrepar
     - DFS, BFS
     - Topological search
     - Shortest path
-- Hash
+- Hash table
     - Hash functions
     - Universal hash
-- Алгоритмы
+- Algorithms
     - Sorting
         - Especially make sure you know heapsort, mergesort and quicksort.
     - Searching
@@ -51,11 +51,11 @@ Top data structures (http://larrr.com/wp-content/uploads/2016/10/InterviewPrepar
     - Recursion
 
 
-ASCII
+### ASCII
+```
 128 chars from [0, 127], 7 bit
 65 → 90, “A” → “Z”
 97 → 122, “a” → “z”
 ord(”a”) → 97
 chr(97) → “a”
-
-
+```
