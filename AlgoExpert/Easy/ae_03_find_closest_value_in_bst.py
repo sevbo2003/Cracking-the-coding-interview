@@ -1,7 +1,7 @@
 """
 LeetCode Alternative:
 
-Problem: 
+Problem:
 
 Input:
 Output:
@@ -12,3 +12,5 @@ SOLUTION 1:
     - Time: O()
     - Space: O()
 """
+
+

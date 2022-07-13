@@ -1,5 +1,5 @@
 """
-LeetCode: https://leetcode.com/problems/two-sum/
+LeetCode Alternative: https://leetcode.com/problems/two-sum/
 
 Problem: Given an array of integers nums and an integer target,
          return two numbers such that they add up to target.

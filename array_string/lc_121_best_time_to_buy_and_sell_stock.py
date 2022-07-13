@@ -10,8 +10,8 @@ SOLUTION 1:
     - Left and right pointers, 0 and 1
     - Move left to the position of right when prices[left] < prices[right]
     - Update profit when new max is seen
-    - Time: O()
-    - Space: O()
+    - Time: O(n)
+    - Space: O(1)
 """
 from typing import List
 
