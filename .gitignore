@@ -1,7 +1,4 @@
+venv/*
 .*
-.idea/
-.DS_Store
-.__pycache__/
-**/__pycache__/
-**/.pytest_cache/
-.vscode/
+__pychache__*
+*.pyc
