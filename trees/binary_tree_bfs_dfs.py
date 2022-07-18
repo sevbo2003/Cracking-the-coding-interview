@@ -1,3 +1,13 @@
+"""
+BFS
+    - Time: O(n)
+    - Space: O(n)
+
+DFS (pre-order, inorder, post-order)
+    - Time: O(n)
+    - Space: O(d), d = depth
+"""
+
 from collections import deque
 
 

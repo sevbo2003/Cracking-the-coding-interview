@@ -7,9 +7,8 @@ class TreeNode:
 
 class Solution:
     def lowestCommonAncestor(self, root: 'TreeNode', p: 'TreeNode', q: 'TreeNode') -> 'TreeNode':
-
-        if not root:
-            return None
+        if not root:  # Base case for recursion
+            return False
 
         if root == p or root == q:
             return root
@@ -21,6 +20,6 @@ class Solution:
             return root
 
         if left is None and right is None:
-            return None
+            return False
 
-        return left if left is not None else right
+        return left or right  # left if left is not None else right
