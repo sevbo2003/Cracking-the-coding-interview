@@ -11,6 +11,9 @@ Solution:
 Time: O(n*logn)
 Space: O(n)
 """
+import heapq
+from heapq import heapify
+from typing import List
 
 
 class KthLargest:
@@ -24,7 +27,7 @@ class KthLargest:
             heapq.heappop(self.nums)
         
     def add(self, val: int) -> int:
-        heappush(self.nums, val)
+        heapq.heappush(self.nums, val)
         if len(self.nums) > self.k:
             heapq.heappop(self.nums)
         return self.nums[0]

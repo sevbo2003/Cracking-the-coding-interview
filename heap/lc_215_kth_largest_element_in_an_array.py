@@ -17,7 +17,6 @@ class Solution:
 
         for num in nums:
             heapq.heappush(heap, num)
-            print(">", heap)
             size += 1
 
             # When the size is bigger than k, then we need to pop the element.
