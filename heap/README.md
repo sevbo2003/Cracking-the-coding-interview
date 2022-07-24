@@ -6,11 +6,22 @@
 ```python
 heapq.heapify(list)  # O(n*logn), in-place operation, min heap by default
 heapq.heappush(heap, item)  # O(logn), push the value item onto the heap, maintaining the heap invariant.
-heapq._heapify_max(listForTree) # For a maxheap
 heapq.heappop(heap)  # O(logn)
-heapq._heappop_max(maxheap) # Pop from maxheap
 heapq.nlargest(n, iterable, key=None) # O((n-k)*logn) to find the kth largest element
 heapq.nsmallest(n, iterable, key=None)
+```
+
+```python
+# Max heap
+from heapq import *
+
+h = [5, 7, 9, 1, 3]
+h_neg = [-i for i in h]
+
+heapify(h_neg)            # heapify
+heappush(h_neg, -2)       # push
+print(-heappop(h_neg))    # pop
+# 9
 ```
 
 ```python
