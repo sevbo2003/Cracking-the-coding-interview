@@ -6,6 +6,7 @@ class TreeNode:
 
 
 class Solution:
+    # O(N) time | O(N) space
     def lowestCommonAncestor(self, root: 'TreeNode', p: 'TreeNode', q: 'TreeNode') -> 'TreeNode':
         if not root:  # Base case for recursion
             return False

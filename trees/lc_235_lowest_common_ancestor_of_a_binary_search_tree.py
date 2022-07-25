@@ -10,3 +10,16 @@ class Solution:
             else:
                 break
         return root
+
+    def lowestCommonAncestorRecursive(self, root: 'TreeNode', p: 'TreeNode', q: 'TreeNode') -> 'TreeNode':
+        def recursion(root, p, q):
+            if root == None:
+                return
+            if root.val < p and root.val < q:
+                return recursion(root.right, p, q)
+            elif root.val > p and root.val > q:
+                return recursion(root.left, p, q)
+            else:
+                return root
+
+        return recursion(root, p.val, q.val)
