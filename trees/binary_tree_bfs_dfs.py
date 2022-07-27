@@ -71,27 +71,6 @@ class Traverse:
 
         return values
 
-    def dfs_iterative(self, root: TreeNode) -> list:
-        """
-        Inorder DFS traversal iterative algorithm.
-        """
-        stack = deque()
-        values = []
-
-        curr = root
-        while True:
-            if curr is not None:
-                stack.append(curr)
-                curr = curr.left
-            elif stack:
-                curr = stack.pop()
-                values.append(curr.val)
-                curr = curr.right
-            else:
-                break
-
-        return values
-
     @staticmethod
     def custom_print(val):
         print(val, end=" ")
@@ -113,4 +92,5 @@ if __name__ == "__main__":
     traverse = Traverse()
 
     print("BFS traversal:", traverse.bfs(tree_root))
-    print("DFS traversal:", traverse.dfs_iterative(tree_root))
+    print("DFS traversal:")
+    traverse.dfs_recursive(tree_root)
