@@ -71,10 +71,6 @@ class Traverse:
 
         return values
 
-    @staticmethod
-    def custom_print(val):
-        print(val, end=" ")
-
     def dfs_iterative(self, root: TreeNode) -> list:
         """
         Inorder DFS traversal iterative algorithm.
@@ -95,6 +91,10 @@ class Traverse:
                 break
 
         return values
+
+    @staticmethod
+    def custom_print(val):
+        print(val, end=" ")
 
     def dfs_recursive(self, root: TreeNode, operation=custom_print):
         """

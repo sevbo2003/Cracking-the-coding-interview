@@ -38,22 +38,19 @@ SOLUTION 4 (WHEN INDEX NEEDED):
 """
 
 
+# O(n^2) time | O(1) space | #BAD
 def two_number_sum_2_loops(nums, target):
-    # O(n^2) | O(1) space
-
     for i in range(len(nums) - 1):
         first_num = nums[i]
         for j in range(i+1, len(nums)):
             second_num = nums[j]
             if first_num + second_num == target:
                 return first_num, second_num
-
     return []
 
 
+# O(n) time | O(n) space | #NICE
 def two_number_sum_set(nums, target):
-    # O(n) | O(n) space
-
     set_ = set()
     for num in nums:
         if num in set_:
@@ -63,9 +60,8 @@ def two_number_sum_set(nums, target):
     return []
 
 
+# O(n*logn) time | O(1) space | Here we don't use space but extra time
 def two_number_sum_sorting(nums, target):
-    # O(n*logn) | O(1) space
-
     nums.sort()
     left, right = 0, len(target) - 1
 
@@ -81,9 +77,8 @@ def two_number_sum_sorting(nums, target):
     return []
 
 
+# O(n) time | O(n) space
 def two_number_sum_index(nums, target):
-    # O(n) | O(n) space
-
     dict_ = {}
 
     for idx, num in enumerate(nums):

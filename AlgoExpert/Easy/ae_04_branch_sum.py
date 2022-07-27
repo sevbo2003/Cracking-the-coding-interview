@@ -16,8 +16,8 @@ Problem: Given the root of the tree, return the list of branch sums
 SOLUTION 1:
     - DFS
     - Recursively
-    - Time: O()
-    - Space: O()
+    - Time: O(N)
+    - Space: O(N)
 """
 
 
