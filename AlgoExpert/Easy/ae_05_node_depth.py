@@ -77,6 +77,10 @@ def node_depth_algpexpert_recursive(root, depth=0) -> int:
            + node_depth_algpexpert_recursive(root.right, depth + 1)
 
 
+def max_depth(root):
+    return 0 if not root else max(max_depth(root.right), max_depth(root.left)) + 1
+
+
 def main():
     tree = build_tree([100, 50, 200, 25, 75, 90, 300])  # 11
     print('>>', node_depth_bfs(tree))
