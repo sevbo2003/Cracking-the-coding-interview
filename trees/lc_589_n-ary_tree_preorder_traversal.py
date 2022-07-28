@@ -3,14 +3,8 @@ LeetCode Alternative: https://leetcode.com/problems/n-ary-tree-preorder-traversa
 
 Problem: Given the root of an n-ary tree, return the preorder traversal of its nodes' values.
 
-Input:
-Output:
-
-SOLUTION 1:
-    -
-    -
-    - Time: O()
-    - Space: O()
+Time complexity: O(V+E), number vertices and edges
+Space complexity: O(V)
 """
 from typing import List
 
