@@ -12,9 +12,7 @@ from AlgoExpert.tree import TreeNode, build_tree
 
 # Solution #1: DFS
 def node_depth_dfs(root: TreeNode) -> int:
-    """
-    O(N) time | O(H) space, where N is the number of nodes, H is height.
-
+    """O(N) time | O(H) space, where N is the number of nodes, H is height.
     - Implement DFS algorith and use global sum variable
     """
     sum_ = 0
@@ -50,6 +48,33 @@ def node_depth_bfs(root: TreeNode) -> int:
         _counter += 1
 
     return _sum
+
+
+# Solution #3: DFS iterative
+def node_depth_algoexpert_iterative(root) -> int:
+    """O(N) time | O(H) space"""
+    sum_of_depth = 0
+    stack = [{'node': root, 'depth': 0}]  # Can be replaced with list of tuples
+
+    while stack:
+        node_data = stack.pop()
+        node, depth = node_data['node'], node_data['depth']
+        if node is None:
+            continue
+        sum_of_depth += depth
+        stack.append({'node': node.left, 'depth': depth + 1})
+        stack.append({'node': node.right, 'depth': depth + 1})
+
+    return sum_of_depth
+
+
+# Solution #4: DFS recursive
+def node_depth_algpexpert_recursive(root, depth=0) -> int:
+    """O(N) time | O(H) space"""
+    if root is None:
+        return 0
+    return depth + node_depth_algpexpert_recursive(root.left, depth + 1) \
+           + node_depth_algpexpert_recursive(root.right, depth + 1)
 
 
 def main():
