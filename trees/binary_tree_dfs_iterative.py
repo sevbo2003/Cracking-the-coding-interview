@@ -55,3 +55,25 @@ def inorder_iterative(root):
             print(curr.val, end=' ')  # CHANGE
             curr = curr.right
 
+
+def postorder_iterative(root):
+    if root is None:
+        return
+
+    stack = deque()
+    stack.append(root)
+
+    # create another stack to store postorder traversal
+    out = deque()
+
+    while stack:
+        curr = stack.pop()
+        out.append(curr.data)
+        if curr.left:
+            stack.append(curr.left)
+        if curr.right:
+            stack.append(curr.right)
+
+    # print postorder traversal
+    while out:
+        print(out.pop(), end=' ')  # CHANGE
