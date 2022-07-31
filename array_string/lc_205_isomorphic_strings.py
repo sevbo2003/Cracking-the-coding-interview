@@ -20,7 +20,28 @@ Space complexity: O(n), m in number of chars (n = distinct chars * indexes where
 from collections import defaultdict
 
 
-class Solution:
+class Solution1:
+    def isIsomorphic(self, s: str, t: str) -> bool:
+        s_n = self.make_numeric(s)
+        t_n = self.make_numeric(t)
+
+        return s_n == t_n
+
+    def make_numeric(self, string):
+        arr = list(string)
+        str_map = {}
+        counter = 1
+
+        for i in range(len(arr)):
+            if arr[i] not in str_map:
+                str_map[arr[i]] = counter
+                counter += 1
+            arr[i] = str(str_map[arr[i]])
+
+        return ''.join(arr)
+
+
+class Solution2:
     def isIsomorphic(self, s: str, t: str) -> bool:
 
         def create_mapping(string):
@@ -29,6 +50,7 @@ class Solution:
             for idx, char in enumerate(string):
                 mapping[char].append(idx)
 
+            # For optimization purposes
             for key, value in mapping.items():
                 mapping[key] = sum(value)
 
