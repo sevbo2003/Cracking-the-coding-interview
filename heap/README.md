@@ -4,10 +4,10 @@
 - https://docs.python.org/3/library/heapq.html
 
 ```python
-heapq.heapify(list)  # O(n*logn), in-place operation, min heap by default
+heapq.heapify(list)  # O(N), in-place operation, min heap by default
 heapq.heappush(heap, item)  # O(logn), push the value item onto the heap, maintaining the heap invariant.
 heapq.heappop(heap)  # O(logn)
-heapq.nlargest(n, iterable, key=None) # O((n-k)*logn) to find the kth largest element
+heapq.nlargest(n, iterable, key=None) # O(k*log(k)) to find the K largest element
 heapq.nsmallest(n, iterable, key=None)
 ```
 
@@ -36,7 +36,7 @@ def topKFrequent(self, nums: List[int], k: int) -> List[int]:
 def heapsort(iterable):
 		h = []
 		for value in iterable:
-				heappush(h, value)
+		    heappush(h, value)
 		return [heappop(h) for i in range(len(h))]
 heapsort([1, 3, 5, 7, 9, 2, 4, 6, 8, 0])  # 0, 1, 2, 3, 4, 5, 6, 7, 8, 9
 ```
@@ -49,7 +49,7 @@ heapq.heappush(q, (2, 'code')) # no need to use heapfiy, because heappush mainta
 heapq.heappush(q, (1, 'eat'))
 heapq.heappush(q, (3, 'sleep'))
 while q:
-		next_item = heapq.heappop(q)
+	  next_item = heapq.heappop(q)
 	  print(next_item)
 # Result:
 # (1, 'eat')
