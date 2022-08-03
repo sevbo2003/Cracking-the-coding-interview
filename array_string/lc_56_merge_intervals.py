@@ -12,10 +12,13 @@ Explanation: Since intervals [1,3] and [2,6] overlap, merge them into [1,6].
 [[1,4],[4,5]]
 [[1,4],[0,4]] for this reason we need to sort
 [[1,4],[2,3]] for this reason we need to save max
+
+Solution 1: sort list, in-place change, and pop, O(N^2) time, O(1) space
+Solution 2: sort, use extra space, O(N) time, O(N) space
 """
 
 
-def merge(intervals: List[List[int]]) -> List[List[int]]:
+def solution1(intervals: list) -> list:
 
     if len(intervals) < 2:
         return intervals
@@ -32,3 +35,13 @@ def merge(intervals: List[List[int]]) -> List[List[int]]:
             i += 1
 
     return intervals
+
+
+def solution2(intervals: list) -> list:
+    res = []
+    for i in sorted(intervals, key=lambda x: x[0]):
+        if res and i[0] <= res[-1][1]:
+            res[-1][1] = max(i[1], res[-1][1])
+        else:
+            res += [i]
+    return res
