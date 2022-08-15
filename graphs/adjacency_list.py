@@ -8,7 +8,7 @@ each element in its linked list represents the other vertices that form an edge 
 
 Pros of Adjacency List:
     - Memory efficient
-    - Easy to find all vertices adjacent to vertex easily
+    - 01. Easy to find all vertices adjacent to vertex easily
 Cons of Adjacency List:
     - Finding is slow because all connected nodes need to be discovered first
 """
