@@ -61,4 +61,3 @@ def test_restore_route(input_data):
     actual_result = restore_route(input_data)
     print(">> ACTUAL RESULT", actual_result)
     assert actual_result == expected_result
-
