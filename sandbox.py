@@ -33,13 +33,13 @@ def restore_route(routes: List[dict]) -> List[dict]:
 
     next_city = find_difference(set(from_cities_dict.keys()), to_cities_set)
 
-    new_routes = []  # To-do
-    for i in range(len(routes)):
+    for i in range(len(routes) - 1):
         starting_city_index = from_cities_dict.get(next_city)
+        from_cities_dict[routes[i]["from"]] = starting_city_index  # Need to update from_cities_dict because we swap.
         next_city = routes[starting_city_index]["to"]
-        new_routes.append(routes[starting_city_index])
+        routes[i], routes[starting_city_index] = routes[starting_city_index], routes[i]
 
-    return new_routes
+    return routes
 
 
 @pytest.mark.parametrize("input_data", permutations([
@@ -50,6 +50,7 @@ def restore_route(routes: List[dict]) -> List[dict]:
         {"from": 'Moscow', "to": 'C'},
     ]))
 def test_restore_route(input_data):
+    input_data = list(input_data)
     print(">> INPUT DATA", input_data)
     expected_result = [
         {"from": 'CH', "to": 'Moscow'},
