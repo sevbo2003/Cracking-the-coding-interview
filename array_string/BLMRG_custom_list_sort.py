@@ -6,19 +6,29 @@ for idx, val in enumerate(alphabets):
 
 
 def comp(s):
-    ret = []
+    result = []
     i = 0
     while i < len(s):
         if i + 1 < len(s) and s[i] + s[i + 1] in alpha_index.keys():
-            ret.append(alpha_index[s[i] + s[i + 1]])
+            result.append(alpha_index[s[i] + s[i + 1]])
             i += 2
         else:
-            ret.append(alpha_index[s[i]])
+            result.append(alpha_index[s[i]])
             i += 1
-
-    return tuple(ret)
+    print(result)
+    return tuple(result)
 
 
 strings = ['abcd', 'dd', 'dda', 'abcdd']
 a = strings.sort(key=comp)
 print(strings)
+
+"""
+[0, 1, 2, 5]
+[4]
+[4, 0]
+[0, 1, 2, 4]
+['abcdd', 'abcd', 'dd', 'dda']
+
+So "key" argument accepts the tuple of integers, so that it then sorts them.
+"""
