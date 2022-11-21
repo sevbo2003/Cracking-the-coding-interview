@@ -1,6 +1,5 @@
 import subprocess
 
-
 PREFIX = 'lc_'
 
 
@@ -16,13 +15,16 @@ def process_string(input_file_name):
     number = split_on_point[0]
     only_letters = split_on_point[1].split()
     underscored_file_name = "_".join(only_letters)
-    joined_file_name = PREFIX + number + "_" +  underscored_file_name + ".py"
+    joined_file_name = PREFIX + number + "_" + underscored_file_name + ".py"
     return joined_file_name
 
 
-file_name_input = input("Your file name: ")
+def main():
+    file_name_input = input("Your file name: ")
+    joined_file_name = process_string(file_name_input)
+    print(joined_file_name)
+    subprocess.run("pbcopy", universal_newlines=True, input=joined_file_name)  # Copy to clipboard.
 
-joined_file_name = process_string(file_name_input)
 
-print(joined_file_name)
-subprocess.run("pbcopy", universal_newlines=True, input=joined_file_name)  # Copy in clipboard.
+if __name__ == "__main__":
+    main()

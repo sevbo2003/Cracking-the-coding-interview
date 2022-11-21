@@ -1,3 +1,12 @@
+"""
+Problem: Given two strings, find the first occurrence of the second string inside first string.
+    If not found then return -1.
+
+    Input: 2 strings
+    Output: integer (that is the index if found, else -1)
+"""
+
+
 def strStr(haystack: str, needle: str) -> int:
     if not needle:
         return 0

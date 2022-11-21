@@ -1,3 +1,10 @@
+"""
+Problem: Given the array of integers, return all permutations with these numbers.
+    Input: array of integers.
+    Output: array containing all permutations.
+"""
+
+
 def permute(nums: list[int]) -> list[list[int]]:
     res = []
 
@@ -14,11 +21,16 @@ def permute(nums: list[int]) -> list[list[int]]:
 
         res.extend(perms)
 
-        nums.append(n)
+        nums.append(n)  # As we are removing the n, we have to add it again.
 
     return res
 
 
-nums = [1, 2, 3]
-ans = permute(nums)
-pass
+def main():
+    nums = [1, 2, 3]
+    ans = permute(nums)
+    print(ans)  # [[3, 2, 1], [2, 3, 1], [1, 3, 2], [3, 1, 2], [2, 1, 3], [1, 2, 3]]
+
+
+if __name__ == "__main__":
+    main()
