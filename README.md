@@ -13,19 +13,17 @@ Constraints, Ideas, Complexities, Code, and Tests
 - [Communities](#communities)
 
 ## Algorithms & Data Structures
-- [ ] VIDEOS: [Jenny's DSA playlist](https://www.youtube.com/playlist?list=PLdo5W4Nhv31bbKJzrsKfMpo_grxuLl8LU), [Naso Academy DS playlist](https://www.youtube.com/playlist?list=PLBlnK6fEyqRj9lld8sWIUNwlKfdUoPd1Y)
-- [ ] READING: [programiz.com/dsa](https://www.programiz.com/dsa)
+- [ ] [Jenny's DSA playlist](https://www.youtube.com/playlist?list=PLdo5W4Nhv31bbKJzrsKfMpo_grxuLl8LU)
+- [ ] [interviewbit.com](https://www.interviewbit.com/courses/programming/) & [programiz.com/dsa](https://www.programiz.com/dsa)
 - [ ] "Grokking the algorithms" book
 - [ ] [LeetCode Explore](https://leetcode.com/explore/)
 - [ ] [LeetCode study plan](https://leetcode.com/study-plan/) — Data Structure 1, Algorithm 1, Programming Skills 1
 - [ ] "Cracking the coding interview" + [CTCI problems in LeetCode](https://leetcode.com/discuss/general-discussion/1152824/cracking-the-coding-interview-6th-edition-in-leetcode)
 - [ ] [LeetCode study plan](https://leetcode.com/study-plan/) — Data Structure 2, Algorithm 2, Programming Skills 2
-- [ ] AlgoExpert
+- [ ] AlgoExpert 
 - [ ] [neetcode.io](https://neetcode.io/) & [NeetCode playlist](https://www.youtube.com/c/NeetCode/playlists)
-- [ ] [interviewbit.com](https://www.interviewbit.com/courses/programming/)
-- [ ] [Codility](https://app.codility.com/programmers/lessons/), [InterviewBit.com](http://InterviewBit.com), educative, interviewcake.com
-- [ ] [binarysearch.com](https://binarysearch.com/problems) Facebook, Google, Microsoft interview questions
-- [ ] Algorithms Design Manual book
+- [ ] educative.io
+- [ ] LeetCode again
 
 ## System Design
 - [ ] "System Expert" from AlgoExpert
