@@ -3,8 +3,8 @@
 | Done? | Question | Description                                         | Difficulty |
 |-------|----------|-----------------------------------------------------|------------|
 | +     | 1396     | Design Underground System                           | Medium     |
-| -     | 380      | Insert Delete GetRandom O(1)                        | Medium     |
-| -     | 1029     | Two City Scheduling                                 | Medium     |
+| +     | 380      | Insert Delete GetRandom O(1)                        | Medium     |
+| +     | 1029     | Two City Scheduling                                 | Medium     |
 | -     | 1169     | Invalid Transactions                                | Medium     |
 | -     | 1656     | Design an Ordered Stream                            | Easy       |
 | -     | 253      | Meeting Rooms II                                    | Medium     |
