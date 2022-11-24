@@ -7,7 +7,7 @@
 | +     | 1029     | Two City Scheduling                                 | Medium     |
 | +     | 1169     | Invalid Transactions                                | Medium     |
 | +     | 1656     | Design an Ordered Stream                            | Easy       |
-| -     | 253      | Meeting Rooms II                                    | Medium     |
+| +     | 253      | Meeting Rooms II                                    | Medium     |
 | -     | 1244     | Design A Leaderboard                                | Medium     |
 | -     | 1209     | Remove All Adjacent Duplicates in String II         | Medium     |
 | -     | 430      | Flatten a Multilevel Doubly Linked List             | Medium     |
