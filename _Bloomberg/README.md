@@ -6,7 +6,7 @@
 | +     | 380      | Insert Delete GetRandom O(1)                        | Medium     |
 | +     | 1029     | Two City Scheduling                                 | Medium     |
 | +     | 1169     | Invalid Transactions                                | Medium     |
-| -     | 1656     | Design an Ordered Stream                            | Easy       |
+| +     | 1656     | Design an Ordered Stream                            | Easy       |
 | -     | 253      | Meeting Rooms II                                    | Medium     |
 | -     | 1244     | Design A Leaderboard                                | Medium     |
 | -     | 1209     | Remove All Adjacent Duplicates in String II         | Medium     |
