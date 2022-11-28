@@ -1,4 +1,4 @@
-def reverseList(self, head):
+def reverseList(head):
     prev, curr = None, head
 
     while curr:
