@@ -11,7 +11,7 @@
 | +     | 1244     | Design A Leaderboard                                | Medium     |
 | +     | 1209     | Remove All Adjacent Duplicates in String II         | Medium     |
 | +     | 430      | Flatten a Multilevel Doubly Linked List             | Medium     |
-| -     | 394      | Decode String                                       | Medium     |
+| +     | 394      | Decode String                                       | Medium     |
 | -     | 140      | Word Break II                                       | Hard       |
 | -     | 797      | All Paths From Source to Target                     | Medium     |
 | -     | 1472     | Design Browser History                              | Medium     |
