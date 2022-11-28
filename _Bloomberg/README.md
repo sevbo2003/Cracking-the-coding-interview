@@ -30,7 +30,7 @@
 | -     | 445      | Add Two Numbers II                                  | Medium     |
 | -     | 311      | Sparse Matrix Multiplication                        | Medium     |
 | -     | 1823     | Find the Winner of the Circular Game                | Medium     |
-| -     | 611      | Valid Triangle Number                               | Medium     |
+| +     | 611      | Valid Triangle Number                               | Medium     |
 | -     | 1614     | Maximum Nesting Depth of the Parentheses            | Easy       |
 
 ### Others:
