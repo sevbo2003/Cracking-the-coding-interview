@@ -13,7 +13,7 @@
 | +     | 430      | Flatten a Multilevel Doubly Linked List             | Medium     |
 | +     | 394      | Decode String                                       | Medium     |
 | -     | 140      | Word Break II                                       | Hard       |
-| -     | 797      | All Paths From Source to Target                     | Medium     |
+| +     | 797      | All Paths From Source to Target                     | Medium     |
 | -     | 1472     | Design Browser History                              | Medium     |
 | -     | 723      | Candy Crush                                         | Medium     |
 | -     | 1274     | Number of Ships in a Rectangle                      | Hard       |
