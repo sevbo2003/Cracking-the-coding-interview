@@ -25,14 +25,14 @@
 | -     | 1236     | Web Crawler                                         | Medium     |
 | -     | 1347     | Minimum Number of Steps to Make Two Strings Anagram | Medium     |
 | -     | 1583     | Count Unhappy Friends                               | Medium     |
-| -     | 146      | LRU Cache                                           | Medium     |
+| +     | 146      | LRU Cache                                           | Medium     |
 | -     | 79       | Word Search                                         | Medium     |
 | -     | 445      | Add Two Numbers II                                  | Medium     |
 | -     | 311      | Sparse Matrix Multiplication                        | Medium     |
 | -     | 1823     | Find the Winner of the Circular Game                | Medium     |
 | +     | 611      | Valid Triangle Number                               | Medium     |
 | -     | 1614     | Maximum Nesting Depth of the Parentheses            | Easy       |
-
+ 
 ### Others:
 - https://github.com/krishnadey30/LeetCode-Questions-CompanyWise/blob/master/bloomberg_alltime.csv 
 - https://gist.github.com/jayant91089/97587cfdbb8de413e59761859295efed#file-leetcode-bloomberg-md 
