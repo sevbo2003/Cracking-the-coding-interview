@@ -2,31 +2,32 @@ import pathlib
 import sys
 
 
-def parse(puzzle_input, type=1, seperator="\n"):
-    # Parses the input
+def parse(puzzle_input: str, type: int = 1, seperator: str = "\n") -> list[str] | str:
+    """Parses the string input, and return list if type is handled in code, otherwise returns original input.
+    """
 
     # print(puzzle_input)
     if type == 1:
-        return list(puzzle_input.split())
+        return puzzle_input.split()
     elif type == 2:
-        return list(puzzle_input.split(seperator))
+        return puzzle_input.split(seperator)
     elif type == 3:
-        return list(puzzle_input.strip().split(seperator))
+        return puzzle_input.strip().split(seperator)
     else:
-        return "Freestyle"
+        return puzzle_input
 
 
-def part1(data):
-    """Solve part 1."""
-    ...
+def part1(data: list):
+    """Solution for part 1."""
+    return 0
 
 
-def part2(data):
-    """Solve part 2."""
-    ...
+def part2(data: list):
+    """Solution for part 2."""
+    return 0
 
 
-def solve(puzzle_input):
+def solve(puzzle_input: str):
     # Solve the puzzle for the given input.
     # parse the given input
     data = parse(puzzle_input, 2)
@@ -39,9 +40,9 @@ def solve(puzzle_input):
 
 
 if __name__ == "__main__":
-    #  print(sys.argv)
+    # print(sys.argv)
     for path in sys.argv[1:]:
-        #   print(f"{path}:")
+        # print(f"{path}:")
         puzzle_input = pathlib.Path(path).read_text()
         solutions = solve(puzzle_input)
         print("\n".join(str(solution) for solution in solutions))
