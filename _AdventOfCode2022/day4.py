@@ -68,7 +68,7 @@ def part2(data: list):
         # print(elfs_pair_assigned_ranges)
         # print(">> check")
 
-        # Find any intersection between elfs in pair
+        # Find any intersection betwe en elfs in pair
         one_pair_intersection.clear()
         for idx in range(1, len(one_pair_assigned_ranges)):
             intersection = one_pair_assigned_ranges[idx-1].intersection(one_pair_assigned_ranges[idx])
