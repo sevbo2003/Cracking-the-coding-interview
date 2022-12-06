@@ -19,7 +19,7 @@
 | -     | 1274     | Number of Ships in a Rectangle                      | Hard       |
 | -     | 314      | Binary Tree Vertical Order Traversal                | Medium     |
 | -     | 200      | Number of Islands                                   | Medium     |
-| -     | 935      | Knight Dialer                                       | Medium     |
+| - ?   | 935      | Knight Dialer                                       | Medium     |
 | -     | 56       | Merge Intervals                                     | Medium     |
 | -     | 716      | Max Stack                                           | Hard       |
 | -     | 1236     | Web Crawler                                         | Medium     |
@@ -29,9 +29,9 @@
 | -     | 79       | Word Search                                         | Medium     |
 | -     | 445      | Add Two Numbers II                                  | Medium     |
 | -     | 311      | Sparse Matrix Multiplication                        | Medium     |
-| -     | 1823     | Find the Winner of the Circular Game                | Medium     |
+| +     | 1823     | Find the Winner of the Circular Game                | Medium     |
 | +     | 611      | Valid Triangle Number                               | Medium     |
-| -     | 1614     | Maximum Nesting Depth of the Parentheses            | Easy       |
+| +     | 1614     | Maximum Nesting Depth of the Parentheses            | Easy       |
  
 ### Others:
 - https://github.com/krishnadey30/LeetCode-Questions-CompanyWise/blob/master/bloomberg_alltime.csv 
