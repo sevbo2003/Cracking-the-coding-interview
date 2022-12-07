@@ -1,4 +1,7 @@
 """
+NOTE: You have to change the input file. Leave only operations that need to be performed.
+    Please update STACKS with your input data.
+
 [T] [V]                     [W]
 [V] [C] [P] [D]             [B]
 [J] [P] [R] [N] [B]         [Z]
