@@ -24,5 +24,12 @@ def sum_top_k_calories(k: int = 1) -> int:
     return sum(top_calories)
 
 
-print(">>> Part 1: ", sum_top_k_calories(k=1))
-print(">>> Part 2: ", sum_top_k_calories(k=3))
+def main():
+    solution1 = sum_top_k_calories(k=1)
+    solution2 = sum_top_k_calories(k=3)
+
+    print(solution1, solution2)
+
+
+if __name__ == "__main__":
+    main()
