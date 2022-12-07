@@ -28,6 +28,7 @@ Solution part 2:
 
 """
 
+FILE_PATH = 'data/day2.txt'
 
 SELECTED_SHAPE_SCORE = {
     'X': 1,
@@ -75,29 +76,36 @@ STRATEGY_FOR_PART2 = {
 }
 
 
-def part1():
+def part1(path: str) -> int:
     my_total_score = 0
 
-    with open('data/day2.txt') as file:
+    with open(path) as file:
         for line in file.readlines():
             opponent_selection, my_selection = line.split()
             score = STRATEGY_OVERALL_SCORE[opponent_selection][my_selection]
             my_total_score += score
 
-    print(my_total_score)
+    return my_total_score
 
 
-def part2():
+def part2(path: str) -> int:
     my_total_score = 0
 
-    with open('data/day2.txt') as file:
+    with open(path) as file:
         for line in file.readlines():
             opponent_selection, how_round_should_end = line.split()
             score = STRATEGY_FOR_PART2[opponent_selection][how_round_should_end]
             my_total_score += score
 
-    print(my_total_score)
+    return my_total_score
 
 
-part1()
-part2()
+def main():
+    solution1 = part1(FILE_PATH)
+    solution2 = part2(FILE_PATH)
+
+    print(solution1, solution2)
+
+
+if __name__ == "__main__":
+    main()
